@@ -61,17 +61,27 @@ mvn package
 ```
 
 Installation
+
+**NOTE** Make sure to include `file://` in front of the path below.
+
 ```bash
 sudo bin/elasticsearch-plugin install file:///path/to/plugin.zip
 ```
 after installation restart of elasticsearch is required
+
+Uninstall
+
+```bash
+sudo bin/elasticsearch-plugin remove elasticsearch-skroutz-greekstemmer
+```
 
 Versions
 --------
 
 SkroutzGreekStemmer Plugin | ElasticSearch | Branch
 ---------------------------|---------------|--------|
-7.1.0                   | 7.1.0        | 7.1.0 |
+7.7.0                      | 7.7.0         | 7.7.0  |
+7.1.0                      | 7.1.0         | 7.1.0  |
 5.4.2.6                    | 5.4.2         | 5.4.2  |
 5.4.0.1                    | 5.4.0         | 5.4.0  |
 2.4.4.1                    | 2.4.4         | 2.4.4  |
